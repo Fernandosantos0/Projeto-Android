@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+/* Google Fonts */
+
+/* Fonte Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Fonte Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* --------- FIM GO GOOGLE FONTS ----------------- */
+
+/* Importado fontes */
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* Seletor Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variável CSS */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84; 
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+    --cor7: #fff;
+
+    --fonte-padrao: Arial,Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    text-indent: 15px;
+    margin: 15px 0;
+}
+
+a.externo::after { /* emojipedia */
+    content: "\1F517";
+}
+
+
+header {
+    background: var(--cor4);
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 35px;
+    color: var(--cor7);
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 black;
+    font-size: 2.6em;
+}
+
+header > p {
+    color: var(--cor7);
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 0 black;
+    padding-bottom: 25px;
+}
+
+nav {
+    background: var(--cor5);
+    padding: 10px;
+    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.438);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+main {
+    background: var(--cor7);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.432);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 25px;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    text-indent: 10px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+}
+
+main p {
+    line-height: 1.5em;
+}
+
+main img {
+    width: 100%;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4)
+}
+
+main img.img-pequeno {
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside > ul {
+    list-style-type: "\2714\00A0";
+    list-style-position: inside;
+    columns: 2; /* Propriedade CSS para divivi culuna */
+}
+
+footer {
+    background: var(--cor5);
+    color: var(--cor7);
+    text-align: center;
+    font-size: .8em;
+    padding: 2px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+@media screen and (max-width: 430px) { 
+    nav a {
+        display: block;
+        text-align: center;
+    }
+}
