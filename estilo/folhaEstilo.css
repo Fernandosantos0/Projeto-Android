@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Google Fonts */
 
 /* Fonte Bebas Neue */
@@ -21,11 +28,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
-/* Variável CSS */
-:root {
+:root { /* Variável CSS */
     --cor0: #c5ebd6;
     --cor1: #c5ebd6;
     --cor2: #83e1ad;
@@ -87,7 +94,8 @@ header > p {
 nav {
     background: var(--cor5);
     padding: 10px;
-    box-shadow: 0 7px 9px rgba(0, 0, 0, 0.438);
+    -webkit-box-shadow: 0 7px 9px rgba(0, 0, 0, 0.438);
+            box-shadow: 0 7px 9px rgba(0, 0, 0, 0.438);
 }
 
 nav > a {
@@ -101,7 +109,9 @@ nav > a:hover {
     background-color: var(--cor2);
     color: var(--cor4);
     border-radius: 4px;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+         -o-transition-duration: 0.4s;
+            transition-duration: 0.4s;
 }
 
 main {
@@ -110,7 +120,8 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.432);
+    -webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.432);
+            box-shadow:  0 0 10px rgba(0, 0, 0, 0.432);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-bottom: 25px;
@@ -124,6 +135,8 @@ main h1 {
 main h2 {
     font-family: var(--fonte-android);
     text-indent: 10px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--cor2)), to(transparent));
+    background-image: -o-linear-gradient(left, var(--cor2), transparent);
     background-image: linear-gradient(to right, var(--cor2), transparent);
 }
 
@@ -176,7 +189,8 @@ aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+    -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
 }
 
 aside > h3 {
@@ -190,7 +204,9 @@ aside > h3 {
 aside > ul {
     list-style-type: "\2714\00A0";
     list-style-position: inside;
-    columns: 2; /* Propriedade CSS para divivi culuna */
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2; /* Propriedade CSS para divivi culuna */
 }
 
 footer {
