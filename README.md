@@ -8,7 +8,10 @@
 
 ## Recursos e/ou Ferramentas Utilizados:
 - Visual Studio Code (VS Code)
-- Pixabay
+- Flaticon
+- Google Fonts
+- html5shiv.js
+- Tags Semânticas do HTML5
 
 ### Link para acessar:
 
