@@ -15,8 +15,4 @@
 
 ### Link para acessar:
 
-```bash
-
-https://fernandosantos0.github.io/Projeto-Android/
-
-```
+[Acessar o Projeto](https://fernandosantos0.github.io/Projeto-Android//)
